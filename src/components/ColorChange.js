@@ -4,9 +4,7 @@ import { connect } from "react-redux";
 import { changeColor } from "../actions";
 
 const ColorChange = props => {
-  let clase = `${props.active ? "activo" : "noactivo"} ${
-    props.colorContenedor
-  }`;
+  let clase = `${props.active ? "activo" : "noactivo"} ${props.colorName}`;
 
   return (
     <div

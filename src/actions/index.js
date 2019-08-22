@@ -5,3 +5,9 @@ export const changeColor = color => {
     payload: color
   };
 };
+export const selectMateria = materia => {
+  return {
+    type: "SELECT_MATERIA",
+    payload: materia
+  };
+};

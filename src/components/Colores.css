@@ -13,10 +13,10 @@
   cursor: pointer;
 }
 
-.yellow {
+.pink {
   display: block;
   margin: 1px;
-  background-color: yellow;
+  background-color: #ff0080;
   width: 20px;
   height: 20px;
   border: 1px solid black;
@@ -25,14 +25,32 @@
 .green {
   display: block;
   margin: 1px;
-  background-color: green;
+  background-color: #00ff00;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.orange {
+  display: block;
+  margin: 1px;
+  background-color: orange;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.default {
+  display: block;
+  margin: 1px;
+  background-color: #364b65;
   width: 20px;
   height: 20px;
   border: 1px solid black;
   cursor: pointer;
 }
 .activo {
-  border: 2px solid pink;
+  border: 2px solid red;
   width: 30px;
   height: 30px;
 }

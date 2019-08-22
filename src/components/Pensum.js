@@ -8,22 +8,25 @@ class Pensum extends React.Component {
     if (index === 0) {
       return "CBC";
     } else {
-      return `${index + 2} Cuatrimestre`;
+      return `${index + 2}  º`;
     }
   };
 
   renderPensum = () => {
-    return this.props.pensum.map((cuatrimestre, index) => (
-      <ul className="cuatrimestre" key={cuatrimestre}>
+    return this.props.cuatrimestre.map((cuatrimestre, index) => (
+      <ul className="cuatrimestre" key={index}>
         <span className="nombre"> {this.renderNombre(index)}</span>
-        {cuatrimestre.map(materia => (
-          <Materia key={materia} materia={materia} />
-        ))}
+        <div className="container">
+          {cuatrimestre.map(data =>
+            Object.keys(data).map(materia => (
+              <Materia key={materia} materia={materia} />
+            ))
+          )}
+        </div>
       </ul>
     ));
   };
   render() {
-    console.log(this.props);
     return <div>{this.renderPensum()}</div>;
   }
 }
