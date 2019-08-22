@@ -18,4 +18,5 @@
   box-shadow: 0 0 5px #fa700a;
   padding: 5px;
   font-weight: bolder;
+  box-sizing: border-box;
 }

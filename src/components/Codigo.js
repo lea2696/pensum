@@ -3,7 +3,11 @@ import { connect } from "react-redux";
 import { selectMateria } from "../actions";
 import "./Codigo.css";
 const Codigo = props => {
-  return <div className="codigo">{props.materiaCodigo}</div>;
+  if (props.materiaCodigo) {
+    return <div className="codigo">{props.materiaCodigo}</div>;
+  } else {
+    return <div />;
+  }
 };
 const mapStateToProps = state => state;
 
