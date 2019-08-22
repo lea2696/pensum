@@ -31,7 +31,7 @@ class Materia extends React.Component {
             background: `${this.state.color}`,
             border: "6px solid pink"
           }}
-          onClick={() => this.cambiarColor()}
+          onClick={() => this.props.changeColor("")}
         >
           {this.props.materia}
         </li>
