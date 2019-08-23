@@ -1,6 +1,6 @@
 .cuatrimestre {
   display: flex;
-
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin-bottom: 25px;
 }
 .container {
@@ -9,7 +9,10 @@
   justify-content: center;
   align-items: center;
 }
-
+.titulo {
+  font-family: Arial;
+  text-align: center;
+}
 .materias {
   cursor: pointer;
   display: flex;
@@ -25,7 +28,7 @@
   list-style: none;
   border: 1px solid black;
   border-radius: 10px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  
   background-color: #364b65;
   color: white;
 }
@@ -43,6 +46,37 @@
     flex-wrap: wrap;
   }
 }
-.activo {
-  border: 2px pink solid;
+.active{
+  border: 3px #f9b71c solid;
+  box-shadow: 3px #f9b71c;
+}
+.blue.materias{
+
+background-color: #31a7ee;
+  cursor: pointer;
+}
+
+.pink.materias{
+
+  background-color: #ff0080;
+
+  cursor: pointer;
+}
+.green.materias{
+
+  background-color: #9ab04f;
+
+  cursor: pointer;
+}
+.orange.materias{
+
+  background-color: orange;
+
+  cursor: pointer;
+}
+.default.materias{
+
+  background-color: #364b65;
+
+  cursor: pointer;
 }

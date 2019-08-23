@@ -6,33 +6,34 @@ import ColorChange from "./ColorChange";
 
 class Colores extends React.Component {
   render() {
-    console.log(this.props);
+  
     return (
       <div className="contenedor">
         <ColorChange
-          colorContenedor="blue"
+          colorContenedor="azul"
           colorName="blue"
+          
           active={this.props.color === "blue"}
         />
         <ColorChange
-          colorContenedor="#00ff00"
+          colorContenedor="verde"
           colorName="green"
-          active={this.props.color === "#00ff00"}
+          active={this.props.color === "green"}
         />
         <ColorChange
-          colorContenedor="#ff0080"
+          colorContenedor="rosado"
           colorName="pink"
-          active={this.props.color === "#ff0080"}
+          active={this.props.color === "pink"}
         />
         <ColorChange
-          colorContenedor="orange"
+          colorContenedor="naranja"
           colorName="orange"
           active={this.props.color === "orange"}
         />
         <ColorChange
-          colorContenedor="#364b65"
+          colorContenedor="gris"
           colorName="default"
-          active={this.props.color === "#364b65"}
+          active={this.props.color === "default"}
         />
       </div>
     );

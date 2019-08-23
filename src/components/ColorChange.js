@@ -4,12 +4,12 @@ import { connect } from "react-redux";
 import { changeColor } from "../actions";
 
 const ColorChange = props => {
-  let clase = `${props.active ? "activo" : "noactivo"} ${props.colorName}`;
+  let clase = `${props.active ? "activo" : "noactivo"} ${props.colorContenedor}`;
 
   return (
     <div
       className={clase}
-      onClick={() => props.changeColor(props.colorContenedor)}
+      onClick={() => props.changeColor(props.colorName)}
     />
   );
 };

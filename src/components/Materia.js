@@ -8,40 +8,49 @@ class Materia extends React.Component {
     color: "",
     selected: false
   };
-  cambiarColor = () => {
-    if (this.props.color) {
-      this.setState({ color: this.props.color });
+  componentDidMount(){
+   const color= localStorage.getItem(this.props.materia); 
+   if(color){
+     this.setState({color})
+   }
+  }
+  click = () => {
+    
+    if (this.props.color) {  //Define el color que este seleccionada en el momento, va desde redux
+      this.setState({ color: this.props.color,
+                  });
+                  localStorage.setItem(this.props.materia, this.props.color);
     }
     if (!this.props.color) {
-      console.log("Mostrar materia");
       this.props.selectMateria(this.props.materia);
-      this.setState({ selected: true });
+      this.setState({ selected: ! this.state.selected});
+    
+    }
+    if (
+      this.props.todasMaterias[this.props.materia] === this.props.materiaCodigo&&this.state.selected
+    ) {
+      this.props.changeColor("");
+
     }
   };
   render() {
+ 
+
+      let clase = `materias ${this.state.color} `;
     if (
-      this.props.todasMaterias[this.props.materia] === this.props.materiaCodigo
+      this.props.todasMaterias[this.props.materia] === this.props.materiaCodigo&&this.state.selected
     ) {
-      console.log("entre");
-      return (
-        <li
-          ref={this.myRef}
-          className="materias"
-          style={{
-            background: `${this.state.color}`,
-            border: "6px solid pink"
-          }}
-          onClick={() => this.props.changeColor("")}
-        >
-          {this.props.materia}
-        </li>
-      );
+
+      clase+="active"
+    } else{
+      clase=`materias ${this.state.color} `
     }
+
     return (
       <li
-        className="materias"
-        style={{ background: `${this.state.color}` }}
-        onClick={() => this.cambiarColor()}
+        className={clase}
+       
+        onClick={() => this.click()}
       >
         {this.props.materia}
       </li>

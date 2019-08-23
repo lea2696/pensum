@@ -27,7 +27,12 @@ class Pensum extends React.Component {
     ));
   };
   render() {
-    return <div>{this.renderPensum()}</div>;
+    return <div>
+       <h2 className="titulo" >
+        Pensum Ingenieria Industrial UBA
+      </h2>
+    {this.renderPensum()}
+    </div>;
   }
 }
 const mapStateToProps = state => {

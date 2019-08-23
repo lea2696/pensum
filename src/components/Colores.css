@@ -4,17 +4,17 @@
   transform: translateY(-50%);
   left: 0px;
 }
-.blue {
+.azul {
   display: block;
   margin: 1px;
-  background-color: blue;
+  background-color: #31a7ee;
   width: 20px;
   height: 20px;
   border: 1px solid black;
   cursor: pointer;
 }
 
-.pink {
+.rosado {
   display: block;
   margin: 1px;
   background-color: #ff0080;
@@ -23,16 +23,16 @@
   border: 1px solid black;
   cursor: pointer;
 }
-.green {
+.verde {
   display: block;
   margin: 1px;
-  background-color: #00ff00;
+  background-color: #9ab04f;
   width: 20px;
   height: 20px;
   border: 1px solid black;
   cursor: pointer;
 }
-.orange {
+.naranja {
   display: block;
   margin: 1px;
   background-color: orange;
@@ -41,7 +41,7 @@
   border: 1px solid black;
   cursor: pointer;
 }
-.default {
+.gris {
   display: block;
   margin: 1px;
   background-color: #364b65;
@@ -51,7 +51,7 @@
   cursor: pointer;
 }
 .activo {
-  border: 2px solid red;
+  border: 3px solid white;
   width: 30px;
   height: 30px;
 }
