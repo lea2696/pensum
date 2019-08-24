@@ -44,7 +44,6 @@ class Materia extends React.Component {
     }
   };
   render() {
-    console.log(this.props.requisitos);
     let clase = `materias ${this.state.color} `;
     if (
       this.props.todasMaterias[this.props.materia] ===
@@ -58,7 +57,10 @@ class Materia extends React.Component {
       clase = `materias ${this.state.color} `;
     }
 
-    if (this.props.requisitos.includes(this.props.materia)) {
+    if (
+      this.props.requisitos.includes(this.props.materia) &&
+      this.props.materiaCodigo
+    ) {
       clase += " requisito";
     }
     return (

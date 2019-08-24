@@ -32,9 +32,7 @@ const mostarNombre = (state = "", action) => {
   }
 };
 const mostrarRequisitos = (state = [], action) => {
-  console.log(action);
   if (action.type === "REQUISITOS") {
-    console.log("entre");
     return action.payload;
   } else {
     return state;

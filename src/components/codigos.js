@@ -42,13 +42,13 @@ export const materias = {
   "92.06": "Automatizacion Industrial y Robotica",
   "92.07": "Instalaciones Industriales",
   E_2: "Electiva 2",
-  " 91.08": "Organizacion Industrial III",
+  "91.08": "Organizacion Industrial III",
   "91.29": "Ingenieria Economica A",
   "92.19": "Procesos de Manufactura II",
-  " 92.99": "Trabajo profesional de Ingeniera Industrial",
+  "92.99": "Trabajo profesional de Ingeniera Industrial",
   E_3: "Electiva 3",
-  " 91.22": "Ingenieria Legal para Ingenieria Industrial",
-  " 92.99.2": "Trabajo Profesional de Ingenieria Industrial",
+  "91.22": "Ingenieria Legal para Ingenieria Industrial",
+  "92.99.2": "Trabajo Profesional de Ingenieria Industrial",
   E_4: "Electiva 4",
   E_5: "Electiva 5"
 };
@@ -136,17 +136,17 @@ const cuatrimestre = [
   ],
   [
     {
-      " 91.08": "Organizacion Industrial III",
+      "91.08": "Organizacion Industrial III",
       "91.29": "Ingenieria Economica A",
       "92.19": "Procesos de Manufactura II",
-      " 92.99": "Trabajo profesional de Ingeniera Industrial",
+      "92.99": "Trabajo profesional de Ingeniera Industrial",
       E_3: "Electiva 3"
     }
   ],
   [
     {
-      " 91.22": "Ingenieria Legal para Ingenieria Industrial",
-      " 92.99.2": "Trabajo Profesional de Ingenieria Industrial",
+      "91.22": "Ingenieria Legal para Ingenieria Industrial",
+      "92.99.2": "Trabajo Profesional de Ingenieria Industrial",
       E_4: "Electiva 4",
       E_5: "Electiva 5"
     }
@@ -197,13 +197,13 @@ export const requisitos = {
   "92.06": ["85.38", "95.13"],
   "92.07": ["85.38", "87.17", "91.12", "92.18"],
   E_2: [], //decimo cuatrimestre
-  " 91.08": ["91.12"],
+  "91.08": ["91.12"],
   "91.29": ["91.28"],
   "92.19": ["92.04"],
-  " 92.99": [],
+  "92.99": [],
   E_3: [],
-  " 91.22": [],
-  " 92.99.2": ["92.99"],
+  "91.22": [],
+  "92.99.2": ["92.99"],
   E_4: [],
   E_5: []
 };
