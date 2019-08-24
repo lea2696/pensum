@@ -19,6 +19,7 @@
   padding: 15px;
   font-weight: bolder;
   box-sizing: border-box;
+  z-index: 999999;
 }
 @media (max-width: 600px) {
   .codigo {
