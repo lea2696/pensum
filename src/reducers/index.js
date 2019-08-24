@@ -31,10 +31,21 @@ const mostarNombre = (state = "", action) => {
     return "";
   }
 };
+const mostrarRequisitos = (state = [], action) => {
+  console.log(action);
+  if (action.type === "REQUISITOS") {
+    console.log("entre");
+    return action.payload;
+  } else {
+    return state;
+  }
+};
+
 export default combineReducers({
   cuatrimestre: getMaterias,
   color: getColores,
   colorSelect: colorSeleccionado,
   materiaCodigo: mostarNombre,
-  todasMaterias: todasMaterias
+  todasMaterias: todasMaterias,
+  requisitos: mostrarRequisitos
 });

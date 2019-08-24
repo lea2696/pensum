@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { changeColor, selectMateria } from "../actions";
+import { changeColor, selectMateria, selectRequisitos } from "../actions";
 import "./Pensum.css";
 
 class Materia extends React.Component {
@@ -25,6 +25,7 @@ class Materia extends React.Component {
   }
 
   click = () => {
+    this.props.selectRequisitos(this.props.materia);
     if (this.props.color) {
       //Define el color que este seleccionada en el momento, va desde redux
       this.setState({ color: this.props.color });
@@ -43,6 +44,7 @@ class Materia extends React.Component {
     }
   };
   render() {
+    console.log(this.props.requisitos);
     let clase = `materias ${this.state.color} `;
     if (
       this.props.todasMaterias[this.props.materia] ===
@@ -56,6 +58,9 @@ class Materia extends React.Component {
       clase = `materias ${this.state.color} `;
     }
 
+    if (this.props.requisitos.includes(this.props.materia)) {
+      clase += " requisito";
+    }
     return (
       <li className={clase} onClick={() => this.click()}>
         {this.props.materia}
@@ -66,5 +71,5 @@ class Materia extends React.Component {
 const mapStateToProps = state => state;
 export default connect(
   mapStateToProps,
-  { changeColor, selectMateria }
+  { changeColor, selectMateria, selectRequisitos }
 )(Materia);

@@ -55,6 +55,7 @@ html > * {
   box-shadow: 3px #f9b71c;
   z-index: 999999;
 }
+
 .blue.materias {
   background-color: #31a7ee;
   cursor: pointer;
@@ -93,4 +94,10 @@ html > * {
 .desactivo {
   z-index: 999999;
   opacity: 0.2;
+}
+.requisito {
+  border: 3px blue solid;
+  box-shadow: 3px blue;
+  z-index: 999999;
+  opacity: 0.8;
 }
