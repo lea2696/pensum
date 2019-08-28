@@ -49,6 +49,9 @@ html > * {
   .container {
     flex-wrap: wrap;
   }
+  .seleccionado {
+  padding-bottom: 20%;
+}
 }
 .active {
   border: 3px #f9b71c solid;
