@@ -45,14 +45,7 @@ html > * {
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 600px) {
-  .container {
-    flex-wrap: wrap;
-  }
-  .seleccionado {
-  padding-bottom: 20%;
-}
-}
+
 .active {
   border: 3px #f9b71c solid;
   box-shadow: 3px #f9b71c;
@@ -106,4 +99,12 @@ html > * {
   box-shadow: 3px blue;
   z-index: 999999;
   opacity: 0.8;
+};
+@media (max-width: 600px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .seleccionado {
+  padding-bottom: 20%;
+}
 }
