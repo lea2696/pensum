@@ -99,7 +99,7 @@ html > * {
   box-shadow: 3px blue;
   z-index: 999999;
   opacity: 0.8;
-};
+}
 @media (max-width: 600px) {
   .container {
     flex-wrap: wrap;
